@@ -36,8 +36,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <!-- Add a link to the Posts index page -->
-                        <li class="nav-item">
+                        <li class="nav-item d-flex">
                             <a class="nav-link" href="{{ route('admin.posts.index') }}">Posts</a>
+                            <a class="nav-link" href="{{ route('admin.users.index') }}">Users</a>
                         </li>
                     </ul>
 
