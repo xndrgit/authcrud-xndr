@@ -4,6 +4,14 @@
 
 @section('content')
     <div class="container">
+
+        <!-- Display success message if it exists in the session -->
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <h1>{{ $post->title }}</h1>
         <p>{{ $post->content }}</p>
 

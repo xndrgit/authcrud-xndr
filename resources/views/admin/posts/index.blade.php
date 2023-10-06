@@ -5,6 +5,14 @@
 @section('content')
     <div class="container">
         <h1>Posts</h1>
+
+        <!-- Display success message if it exists in the session -->
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <table class="table">
             <thead>
             <tr>
